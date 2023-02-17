@@ -31,6 +31,7 @@ public class ActivityRestController {
 	@PostMapping("/getActivitiesByJob")
 	public ResponseEntity getActivitiesByJob(@RequestBody JobDetails job) {
 		ResponseEntity response = null;
+		//syss
 		try {
 			List<Activity> activitiesList = activityDetailsService.getActivitiesByJob(job.getId());
 			response = new ResponseEntity(activitiesList, HttpStatus.OK);
