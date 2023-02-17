@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+label {float: right !important;
+}
+.table{
+/*		display: inline-block;*/
+  height: 300px;
+  overflow-y: scroll;
+	}
+	thead{
+/*		position: fixed;*/
+		
+	}
+	.panel {
+    margin-bottom: 0px;
+	}
+	.panel-body {
+    padding: 5px 15px;
+}
+	#dataTables-example_wrapper>.row{
+		margin-bottom: 10px;
+	}
+.dataTables_length{
+	float: left !important
+	}
+.pagination{
+	float: right !important;
+	}
+.windowSettings {
+	z-index: 100;
+	position: absolute;
+	display: none;
+	background-color: #fff;
+	width: 220px;
+	padding: 15px;
+	margin: 0;
+	border-radius: 3px;
+}
+.windowSettings, div.dropdownCont .dcWrapper {
+	
+	box-shadow: 0 0 1px rgba(57,70,78,.6), 0 20px 55px -8px rgba(57,70,78,.8)
+}
+.windowSettings:after, .windowSettings:before {
+	position: absolute;
+	vertical-align: middle;
+	width: 0;
+	height: 0;
+	content: "";
+	display: block
+}
+.windowSettings:before {
+	top: -11px;
+	right: 9px;
+	border-left: 9px solid transparent;
+	border-right: 9px solid transparent;
+	border-bottom: 11px solid rgba(0,0,0,.3);
+	border-style: none double solid
+}
+.windowSettings:after {
+	top: -10px;
+	right: 10px;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 10px solid #fff;
+	border-style: none double solid
+}
+.windowSettings h3 {
+	padding: 0;
+	margin-bottom: 5px;
+	font-size: 11px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #abb9c2
+}
+.windowSettings *+h3 {
+	margin: 15px 0 5px
+}
